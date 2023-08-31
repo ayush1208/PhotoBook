@@ -12,8 +12,8 @@ const ProgressBar = ({ image, setImage}) => {
 
     return (
         <motion.div className = 'progress-bar'
-            initial = {{ scaleX : 0}}
-            animate  = {{ scaleX: progress + '%'}} >
+            initial = {{ width : 0}}
+            animate  = {{ width : progress + '%'}} >
         </motion.div>
 
     );
