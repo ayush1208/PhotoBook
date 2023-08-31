@@ -18,12 +18,12 @@ const Modal = ({selectedImg,setSelectedImg}) => {
 
     const handleFavouriteText = async (e) => {
         await updateFavourite({image: selectedImg, isFavourite: !selectedImg.isFavourite});
-        location.reload();
+        setSelectedImg(null);
     }
 
     const handleDeleteText = async (e) => {
         await deleteImage({image: selectedImg});
-        location.reload();
+        setSelectedImg(null);
     };
 
     return(
